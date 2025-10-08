@@ -1,0 +1,144 @@
+<!-- 2. Calculadora de IMC (Índice de Massa Corporal)
+O Desafio: Desenvolver uma função calcularIMC(peso, altura) que recebe o peso (em kg) e a altura (em metros) de uma pessoa. A função deve calcular o IMC e retornar uma string indicando o valor e a classificação (ex: "Abaixo do peso", "Peso normal", "Sobrepeso").
+
+Conceitos de JS em Foco: Funções com parâmetros e retorno, operadores matemáticos, e estruturas condicionais (if, else if, else) para determinar a classificação.
+
+Exemplo de Chamada: console.log(calcularIMC(70, 1.75))
+ Resultado Esperado: "IMC: 22.86 - Peso normal" -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 1</title>
+    <style>
+    body, .body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    p {
+        color: #23395d;
+        font-size: 2rem;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 2px 8px #fff8;
+    }
+    input[type="number"] {
+        margin: 10px 8px;
+        padding: 12px;
+        font-size: 1.1rem;
+        border: 1px solid #43c6ac;
+        border-radius: 8px;
+        outline: none;
+        transition: border 0.2s;
+        background: #fff;
+        color: #23395d;
+        box-shadow: 0 2px 8px #43c6ac22;
+    }
+    input[type="number"]:focus {
+        border: 2px solid #23395d;
+    }
+    button {
+        margin: 18px 0 10px 0;
+        padding: 12px 32px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background: linear-gradient(90deg, #23395d 60%, #43c6ac 100%);
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 16px #23395d22;
+        transition: background 0.3s, transform 0.2s;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    button:hover {
+        background: linear-gradient(90deg, #43c6ac 60%, #23395d 100%);
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 24px #23395d33;
+    }
+    #IMC, #classific {
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        background: #fff;
+        color: #23395d;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #23395d11;
+        padding: 16px 32px;
+        width: 340px;
+        max-width: 90vw;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        transition: box-shadow 0.2s;
+    }
+    #classific {
+        background: #e3f6fc;
+        color: #406e8e;
+    }
+    @media (max-width: 500px) {
+        p { font-size: 1.3rem; }
+        #IMC, #classific { font-size: 1rem; padding: 10px 8px; width: 98vw; }
+        button { padding: 10px 12px; font-size: 1rem; }
+        input[type="number"] { padding: 8px; font-size: 1rem; }
+    }
+    <style>
+/* Estilo geral do botão/link */
+.botao-link {
+    display: inline-block;          /* Para aceitar padding */
+    padding: 12px 25px;             /* Espaçamento interno */
+    background-color: #1A237E;      /* Cor de fundo */
+    color: white;                    /* Cor do texto */
+    text-decoration: none;           /* Remove sublinhado */
+    border-radius: 8px;              /* Bordas arredondadas */
+    font-size: 16px;                 /* Tamanho da fonte */
+    font-weight: bold;
+    transition: all 0.3s ease;      /* Suaviza a animação */
+    cursor: pointer;                 /* Ícone de mãozinha ao passar */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+/* Efeito hover */
+.botao-link:hover {
+    background-color: #3949AB;       /* Escurece ao passar o mouse */
+    transform: translateY(-2px);     /* Pequeno “levantar” do botão */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* Sombra maior */
+}
+
+/* Efeito ativo (clicando) */
+.botao-link:active {
+    transform: translateY(0);       /* Volta à posição normal */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+</style>
+
+</style>
+</head>
+<body class="body">
+    
+<p>CALCULADORA DE IMC</p>
+
+<input type="number" id="peso" placeholder="Peso em kg">
+<input type="number" id="altura" placeholder="Altura em metros">
+<button onclick="IMC()">CALCULAR</button>
+            <p id="IMC"></p>
+           <script src="script.js"></script>
+
+            CLASSIFICAÇÃO DO IMC:
+            <p id = "classific"></p>
+        
+
+            
+</body>
+</html>

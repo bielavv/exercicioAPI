@@ -1,0 +1,136 @@
+<!-- 4. Validador de Dados de Usuário
+O Desafio: Construir uma função validarUsuario(usuario) que recebe um objeto (ex: { nome: "Ana", email: "ana@email.com", senha: "123" }). 
+A função deve verificar se o nome não está vazio, 
+se o email contém "@" e se a senha tem mais de 6 caracteres. 
+Ela deve retornar true se tudo estiver correto, 
+ou um array com as mensagens de erro caso contrário.
+
+Conceitos de JS em Foco: Funções, objetos, condicionais (if), operadores lógicos (&&, ||), 
+e propriedades de string (.length, .includes()).
+
+Exemplo de Retorno com Erro: ["Senha precisa ter mais de 6 caracteres."]-      
+-->
+   <!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 3</title>
+<style>
+/* Reset básico e fonte padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6BC1FF, #B3E5FC);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container centralizado com sombra */
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #1A237E;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #1A237E;
+    box-shadow: 0 0 5px rgba(26, 35, 126, 0.3);
+    outline: none;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1A237E;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3949AB;
+}
+
+/* Resultado */
+#resultadoo {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 24px;
+}
+
+/* Mensagens de erro */
+#resultadoo.error {
+    color: #D32F2F;
+}
+
+/* Mensagens de sucesso */
+#resultadoo.success {
+    color: #388E3C;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+
+   </head>
+   <body class="body">
+    <div class="container">
+    <h1>VALIDAR DADOS USUÁRIO</h1>
+    <input type="text" id="nome" placeholder="Digite seu nome"> <br>
+    <input type="text" id="email" placeholder="Digite seu email"><br>
+    <input type="number" id="senha" placeholder="Digite sua senha"><br>
+    <button onclick="validarUsuario()">VALIDAR</button>
+    <p id="resultadoo"></p>
+    </div>
+
+<script src="script.js"></script>
+                
+   </body>
+   </html>

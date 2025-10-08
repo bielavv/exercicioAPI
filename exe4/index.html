@@ -1,0 +1,93 @@
+<!-- 5. Analisador de Números em um Array
+O Desafio: Criar uma função analisarNumeros(arrayDeNumeros) que recebe um array de números e retorna um objeto contendo o maior número, o menor número e a média de todos os números do array.
+
+Conceitos de JS em Foco: Estruturas de repetição (for ou forEach), condicionais para encontrar o maior/menor valor, operadores matemáticos para calcular a média e manipulação de arrays.
+
+Exemplo de Retorno: { maior: 9, menor: 1, media: 5 } -->
+
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 4</title> 
+<style>
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    h1 {
+        color: #23395d;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        text-shadow: 1px 2px 8px #fff8;
+    }
+    button {
+        margin: 30px 0 20px 0;
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background: linear-gradient(90deg, #23395d 60%, #406e8e 100%);
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 16px #23395d22;
+        transition: background 0.3s, transform 0.2s;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    button:hover {
+        background: linear-gradient(90deg, #406e8e 60%, #23395d 100%);
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 24px #23395d33;
+    }
+    #numeros, #maior, #menor, #media {
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        background: #fff;
+        color: #23395d;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #23395d11;
+        padding: 16px 32px;
+        width: 340px;
+        max-width: 90vw;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        transition: box-shadow 0.2s;
+    }
+    #numeros {
+        background: #e3f6fc;
+        font-size: 1.1rem;
+        color: #406e8e;
+        margin-top: 30px;
+    }
+    @media (max-width: 500px) {
+        h1 { font-size: 1.3rem; }
+        #numeros, #maior, #menor, #media { font-size: 1rem; padding: 10px 8px; width: 98vw; }
+        button { padding: 10px 12px; font-size: 1rem; }
+    }
+</style>  
+   </head>
+   <body >
+    <h1>ANALISADOR DE NÚMEROS</h1>
+    <button onclick="resultados()">GERAR ANALISE</button>
+    <div id="numeros"></div>
+    <div id="maior"></div>
+    <div id="menor"></div>
+    <div id="media"></div>
+
+
+<script src="script.js"></script>
+                
+   </body>
+   </html>
