@@ -1,12 +1,3 @@
-Atividade prática de JavaScript para laboratório
-Cultura Maker e Aprendizado Ativo
-Título: Mão na Massa: Desenvolvendo com Propósito
-Vamos trabalhar em duplas (ou trios), fomentando a colaboração e a troca de conhecimento.
-Objetivo: Aprender fazendo, construindo soluções para problemas reais.
-Nossa abordagem será baseada em projetos e desafios práticos, estimulando a criatividade e a autonomia.
-Foco: Nesta etapa inicial do curso, resolveremos problemas que nos preparam para o desenvolvimento de APIs.
-Laboratório JavaScript: 10 Ideias de Projetos "Maker"
-Aqui estão 10 propostas de atividades práticas para uma aula de revisão de JavaScript, desenhadas para serem resolvidas inteiramente no navegador. O objetivo é fortalecer os fundamentos da linguagem que são essenciais para o back-end.
 
 1. Contador Regressivo
 O Desafio: Criar uma função que calcula e exibe quantos dias, horas, minutos e segundos faltam para uma data futura (por exemplo, o próximo Ano Novo).
