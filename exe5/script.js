@@ -5,7 +5,7 @@ function conversorcelsiusPARAf(){
     cel = parseFloat(cel);
 
     if(cel != "" && !isNaN(cel)){
-    resultado = (cel * 1.8) + 32;   
+    resultado = Math.floor((cel * 1.8) + 32);   
      document.getElementById("resultado1").innerHTML = resultado + "°F";
 }else{
     document.getElementById("resultado1").innerHTML = "Insira um valor válido";
@@ -19,9 +19,9 @@ function conversorfahrenheitPARAc(){
     fah = parseFloat(fah);
 
     if(fah != "" && !isNaN(fah)){
-    resultadoO = (fah - 32) / 1.8;   
+    resultadoO = Math.floor((fah - 32) / 1.8);   
      document.getElementById("resultado2").innerHTML = resultadoO + "°C";
-}else{
+    }else{
     document.getElementById("resultado2").innerHTML = "Insira um valor válido";
     }
 

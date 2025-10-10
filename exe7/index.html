@@ -1,0 +1,73 @@
+<!--
+8. Gerador de Códigos de Cupom
+O Desafio: Criar uma função gerarCupom(tamanho) que gera um código alfanumérico aleatório com o tamanho especificado. O código deve ser uma string.
+
+Conceitos de JS em Foco: Funções, estruturas de repetição (for), Math.random() e manipulação de strings ou arrays para selecionar caracteres aleatórios de um conjunto pré-definido (ex: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789).
+
+Exemplo de Retorno para gerarCupom(8): "X7B3K9P2"
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 6</title>
+
+    <Style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; 
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#resultado {
+    margin-top: 40px;
+    padding: 15px 10px;
+    background-color: #e6ffed; 
+    border: 2px dashed #28a745;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #155724; 
+    letter-spacing: 2px;
+    word-break: break-all;
+    min-height: 20px;
+}
+    </Style>
+</head>
+<body>
+     
+    <button onclick="cupom(20)">GERAR CUPOM</button><br>
+    <p id="resultado"></p>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

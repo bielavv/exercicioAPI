@@ -17,7 +17,7 @@ Exemplo de Retorno com Erro: ["Senha precisa ter mais de 6 caracteres."]-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXERCICIO 3</title>
 <style>
-/* Reset básico e fonte padrão */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,7 +33,7 @@ body {
     align-items: center;
 }
 
-/* Container centralizado com sombra */
+
 .container {
     background-color: #ffffff;
     padding: 40px 30px;
@@ -44,14 +44,14 @@ body {
     text-align: center;
 }
 
-/* Título */
+
 .container h1 {
     margin-bottom: 25px;
     font-size: 1.8rem;
     color: #1A237E;
 }
 
-/* Inputs */
+
 input {
     width: 100%;
     padding: 12px 15px;
@@ -68,7 +68,7 @@ input:focus {
     outline: none;
 }
 
-/* Botão */
+
 button {
     width: 100%;
     padding: 12px;
@@ -86,7 +86,7 @@ button:hover {
     background-color: #3949AB;
 }
 
-/* Resultado */
+
 #resultadoo {
     margin-top: 20px;
     font-weight: bold;
@@ -94,17 +94,17 @@ button:hover {
     min-height: 24px;
 }
 
-/* Mensagens de erro */
+
 #resultadoo.error {
     color: #D32F2F;
 }
 
-/* Mensagens de sucesso */
+
 #resultadoo.success {
     color: #388E3C;
 }
 
-/* Responsividade */
+
 @media (max-width: 480px) {
     .container {
         padding: 30px 20px;
@@ -116,6 +116,7 @@ button:hover {
     .container h1 {
         font-size: 1.5rem;
     }
+
 }
 </style>
 
@@ -125,7 +126,7 @@ button:hover {
     <h1>VALIDAR DADOS USUÁRIO</h1>
     <input type="text" id="nome" placeholder="Digite seu nome"> <br>
     <input type="text" id="email" placeholder="Digite seu email"><br>
-    <input type="number" id="senha" placeholder="Digite sua senha"><br>
+    <input type="text" id="senha" placeholder="Digite sua senha"><br>
     <button onclick="validarUsuario()">VALIDAR</button>
     <p id="resultadoo"></p>
     </div>
